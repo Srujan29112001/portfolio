@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http -equvi="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width-device-width, intial-scale-1.0">
+    <title>Personal Portfolio website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/3579510e29.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="Images/logo123.jpg" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#Projects">Projects</a></li>
+                <li><a href="#Certifications">Certifications</a></li>
+                <li><a href="#Contact">Contact Me</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Engineering Graduate</p>
+            <h1>Hi, I'm<span> Srujan</span></h1>
+        </div>
+    </div>
+</div>
+<!----------------------------------------ABOUT--------------------------------------- -->
+<div id="about">
+    <div class ="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="Images/background.jpeg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p class="tum">I am an Ambitious Engineering Graduate, Enthusiastic about leveraging my technical skills and practical experience to contribute to innovative projects and advance the field of electronics and communication. My dedication to learning and problem-solving, coupled with a strong foundation in both theory and hands-on application, positions me as a dynamic and valuable asset in any technologically-driven environment.</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link"onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links"onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links"onclick="opentab('education')">Education</p>
+                    <p class="tab-links"onclick="opentab('hobbies')">Hobbies</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Coding Languages.</span><br><h1>Python ,C ,Matlab ,VHDL ,HTML ,CSS ,Java Script ,Code Structure and Algorithms.</h1></li>
+                        <li><span>Image Processing and Deep Learning.</span><br><h1>Opencv ,YOLO ,CNN ,ESRGAN ,Tensor Flow ,Pytorch ,Keras , Numpy.</h1></li>
+                        <li><span>Robotics.</span><br><h1>Arduino ,NodeMCU ,Nvidia AGX Xavier ,RaspberryPi ,Pixhawk ,ROS.</h1></li>
+                        <li><span>Softwares(Tools) Used.</span><br><h1>EAGLE ,Auto Cad ,Gazebo Simulator ,Arduino IDE ,PX4 Autopilot ,NVIDIA JetPack SDK ,Pandas ,Visual Studio Code ,Linux OS ,Pi OS ,scikit-learn.</h1></li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>DRDO-DRDL(Defence Reaserch and Development Laboratory).</span><br><h1>1.) 6-month stint on Indegenious Defence Projects.<br>2.) Focused on AI Band Vision Project led by Dr.Akula Naresh(Scientist-F)(Industry Mentor).<br>3.) Implement YOLOv7 on NVIDIA AGX XAVIER.<br>4.) Task involved object detection from Aerial view using a custom dataset from an Autonomous Aerial Vehicle.<br>5.) Added Parameters(code) to the detection for specific applications under guidance of Industry Mentor.<br>6.) Collaborated with cross-functional teams to integrate enhanced object detection.</h1></li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2019-2023 | Thapar Institute of Engineering and Technology.</span><br><h1>Bachelor of Engineering in Electronics and Communication Engineering.</h1></h1></li>
+                        <li><span>March-2019 | Krishna Murty IIT Academy.</span><br><h1>11th&12th Standard.</h1></li>
+                        <li><span>April-2017 | All Saints High School.</span><br><h1>10th Standard.</h1></li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="hobbies">
+                    <ul>
+                        <li><span>Playing Guitar.</span><br><h1></h1></h1></li>
+                        <li><span>Playing Football.</span><br><h1></h1></li>
+                        <li><span>Skateboarding.</span><br><h1></h1></li>
+                        <li><span>Boxing.</span><br><h1></h1></li>
+                        <li><span>FPV Drones Racing.</span><br><h1></h1></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="about-col-3">
+
+            </div>
+        </div>
+    </div>
+</div>
+<!-----------------------------------------------Projects------------------------- -->
+<div id="Projects">
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="Projects-list">
+            <div class="project visible">
+                <i class="fa-solid fa-house-signal"></i>
+                <h2>Capstone Project(Minor Project)</h2>
+                <p>Visible light Commmunication(LiFi based PC to PC communication System).</p>
+                <a href="https://drive.google.com/file/d/1YC3hXzvVLUbikyAlgzMJ0y7ehvNNUnla/view?usp=sharing">Learn More</a>
+            </div>
+            <div class="project visible">
+                <i class="fa-solid fa-helicopter"></i>
+                <h2>Major Project</h2>
+                <p>Aerial View Object Detection using a custom dataset on YOLOv7 on a Aerial Vehicle.</p>
+                <a href="https://drive.google.com/file/d/1agbZXO9zZZW1LhrW0bGWnc0CRRDbf-1P/view?usp=sharing">Learn More</a>
+            </div>
+            <div class="project visible">
+                <i class="fa-solid fa-car"></i>
+                <h2>Autonomus Rover</h2>
+                <p>Autonoumus Moving Bot using Arduino Duemilanove and various sensors.</p>
+                <a href="https://drive.google.com/file/d/1B-l5FMICmN4PohlRveNu3natGdYm58wJ/view?usp=sharing">Learn More</a>
+            </div>
+            <div class="project hidden">
+                <i class="fa-regular fa-hand-lizard"></i>
+                <h2>Robotic Arm(Ongoing)</h2>
+                <p>Robotic arms for cooking basic food(chopping,lifting an object,mimiking human hand movements while cooking).</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div class="project hidden">
+                <i class="fa-solid fa-bowl-food"></i>
+                <h2>Automatic Dog feeder(Ongoing)</h2>
+                <p>Robotic arms for cooking basic food(chopping,lifting an object,mimiking human hand movements while cooking).</p>
+                <a href="#">Learn More</a>
+            </div>
+        </div>
+        <a href="#" class="btn" id="projectsToggleBtn">See More</a>
+        <a href="#" class="btn hidden" id="minimizeBtn2">Minimize</a>
+    </div>
+</div>
+<!-----------------------------------------Certifications----------------------------------- -->
+<div id="Certifications">
+    <div class="container">
+        <h1 class="sub-title">My Certifications</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="Images/work=1.png">
+                <div class="layer">
+                    <h3>Tensor Flow</h3>
+                    <p>
+                        TensorFlow is an open-source machine learning framework developed by Google for building and deploying machine learning models.
+                    </p>
+                    <a href="https://drive.google.com/file/d/1guJUytYhVLgogCgm1RYnld9HNtbOIDWd/view?usp=sharing"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Images/work---2.png">
+                <div class="layer">
+                    <h3>VLSI Design</h3>
+                    <p>
+                        VLSI design involves creating integrated circuits by combining thousands to billions of transistors on a single chip, enabling the development of complex electronic systems.
+                    </p>
+                    <a href="https://drive.google.com/file/d/1KiFMtNSrnd4AI-EjfhoiXtlCnaly0AZC/view?usp=sharing"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Images/work=3.png">
+                <div class="layer">
+                    <h3>DRDO-DRDL</h3>
+                    <p>Internship Completion Certificate(AI-Band Vision Project).</p>
+                    <a href="https://drive.google.com/file/d/1dPBrpQxqEm7qE4LBCpGtZZ_G3or3soa5/view?usp=sharing"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work hidden">
+            </div>
+        </div>
+        <a href="#" class="btn" id="toggleBtn">See More</a>
+        <a href="#" class="btn hidden" id="minimizeBtn">Minimize</a>
+    </div>
+</div>
+<!----------------------------------------Contact Me------------------------------->
+<div id="Contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>ksrujan_be19@thapar.edu</p>
+                <p><i class="fa-solid fa-paper-plane"></i>kt.srujan@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>+91 9100725768</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/srujan.hardik/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/srujan29_?igshid=YTQwZjQ0NmI0OA=="><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/k-srujan2                    "><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/Srujan29112001?tab=overview&from=2023-11-01&to=2023-11-30"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <a href="Images/CV_K.Srujan_Thapar Institute of Engineering and Technology_2023_ECE.pdf" download class="btn">Download CV</a>
+                <a href="Images/Resume_K.Srujan_Thapar University_2023_ECE.pdf" download class="btn">Download Resume</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright @ Srujan.Made with HTML,CSS and Java Script</p>
+    </div>
+</div>
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname)
+    {
+        for(tablink of tablinks)
+        {
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents)
+        {
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+<script>
+    var siemenu = document.getElementById("sidemenu");
+    function openmenu()
+    {
+        siemenu.style.right = "0";
+    }
+    function closemenu()
+    {
+        siemenu.style.right = "-200px";
+    }
+</script>
+<script>
+document.getElementById('toggleBtn').addEventListener('click', function (event) {
+    // Prevent the default behavior of the anchor tag
+    event.preventDefault();
+
+    // Select all hidden certifications
+    var hiddenCertifications = document.querySelectorAll('.work.hidden');
+
+    // Toggle the 'hidden' class to show/hide certifications
+    hiddenCertifications.forEach(function (certification)
+    {
+        certification.classList.toggle('hidden');
+    });
+
+    // Toggle visibility of buttons
+    document.getElementById('toggleBtn').classList.toggle('hidden');
+    document.getElementById('minimizeBtn').classList.toggle('hidden');
+});
+
+document.getElementById('minimizeBtn').addEventListener('click', function (event) \
+{
+    // Prevent the default behavior of the anchor tag
+    event.preventDefault();
+
+    // Select all certifications
+    var allCertifications = document.querySelectorAll('.work');
+
+    // Hide additional certifications beyond the first 3
+    for (var i = 3; i < allCertifications.length; i++) 
+    {
+        allCertifications[i].classList.add('hidden');
+    }
+
+    // Toggle visibility of buttons
+    document.getElementById('toggleBtn').classList.toggle('hidden');
+    document.getElementById('minimizeBtn').classList.toggle('hidden');
+});
+</script>
+<script>
+    document.getElementById('projectsToggleBtn').addEventListener('click', function (event) 
+    {
+            event.preventDefault();
+            var allProjects = document.querySelectorAll('.project');
+            allProjects.forEach(function (project, index) 
+            {
+                if (index >= 3) 
+                {
+                    project.classList.toggle('hidden');
+                }
+            });
+
+            var projectsToggleBtn = document.getElementById('projectsToggleBtn');
+            projectsToggleBtn.classList.toggle('hidden');
+
+            // Toggle visibility of Minimize button
+            var minimizeBtn2 = document.getElementById('minimizeBtn2');
+            minimizeBtn2.classList.toggle('hidden');
+        });
+
+        document.getElementById('minimizeBtn2').addEventListener('click', function (event) {
+            event.preventDefault();
+
+            // Hide additional projects beyond the first 3
+            var allProjects = document.querySelectorAll('.project');
+            allProjects.forEach(function (project, index) {
+                if (index >= 3) {
+                    project.classList.add('hidden');
+                }
+            });
+
+            var projectsToggleBtn = document.getElementById('projectsToggleBtn');
+            projectsToggleBtn.classList.remove('hidden');
+
+            // Toggle visibility of Minimize button
+            var minimizeBtn2 = document.getElementById('minimizeBtn2');
+            minimizeBtn2.classList.add('hidden');
+        });
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzMgAePb3b356XxG91zyNuVrGwzybWb_1_e0pt5yvTpxvADkznhn005EPiFC0nFRKvO/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        } )
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
